@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Globe, AlertTriangle, TrendingDown, TrendingUp } from "lucide-react";
+import { ImpactMap } from "@/components/ImpactMap";
 
 const MapImpacts = () => {
   const regions = [
@@ -61,20 +62,11 @@ const MapImpacts = () => {
         <CardHeader>
           <CardTitle className="text-2xl text-foreground flex items-center gap-2">
             <Globe className="h-6 w-6 text-primary" />
-            Global Impact Overview
+            Interactive Impact Simulator
           </CardTitle>
         </CardHeader>
         <CardContent>
-          <div className="aspect-video bg-secondary/30 rounded-lg border border-border/50 flex items-center justify-center">
-            <div className="text-center space-y-4">
-              <Globe className="h-24 w-24 mx-auto text-primary animate-glow-pulse" />
-              <p className="text-xl font-semibold text-foreground">Interactive Map Placeholder</p>
-              <p className="text-muted-foreground max-w-md">
-                A data visualization showing regional temperature changes, sea level rise, and extreme
-                weather patterns would be displayed here
-              </p>
-            </div>
-          </div>
+          <ImpactMap />
         </CardContent>
       </Card>
 
