@@ -1,1 +1,7 @@
 project_id = "ascxpexbykecvrfikisr"
+
+[functions.computeImpact]
+verify_jwt = false
+
+[functions.compareMitigation]
+verify_jwt = false
